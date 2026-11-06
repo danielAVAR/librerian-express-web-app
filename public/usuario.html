@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librarian - Mi cuenta</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Librarian</h1>
+    <span id="bienvenida"></span>
+    <button id="btnSalir" type="button">Salir</button>
+  </header>
+  <main>
+    <section class="caja">
+      <h2>Mi perfil</h2>
+      <form id="formPerfil" class="formulario">
+        <label>Identificación <input name="identificacion" disabled></label>
+        <input name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo" required>
+        <input name="telefono" placeholder="Teléfono">
+        <input name="direccion" placeholder="Dirección">
+        <input type="password" name="password" placeholder="Nueva contraseña (opcional)">
+        <button type="submit">Guardar cambios</button>
+      </form>
+      <p id="mensajePerfil" class="mensaje"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Historial de préstamos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Libro</th>
+            <th>Fecha préstamo</th>
+            <th>Devolución tentativa</th>
+            <th>Devolución</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="tablaPrestamos"></tbody>
+      </table>
+    </section>
+
+    <section class="caja">
+      <h2>Mis compras</h2>
+      <div id="listaCompras"></div>
+    </section>
+  </main>
+  <script src="/js/api.js"></script>
+  <script src="/js/usuario.js"></script>
+</body>
+</html>

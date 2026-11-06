@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librarian - Registro</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body class="centrado">
+  <form id="formRegistro" class="caja login">
+    <h1>Librarian</h1>
+    <h2>Crear cuenta</h2>
+    <input name="nombre" placeholder="Nombre completo" required>
+    <input name="identificacion" placeholder="Identificación" required>
+    <input type="email" name="email" placeholder="Correo" required>
+    <input name="telefono" placeholder="Teléfono">
+    <input name="direccion" placeholder="Dirección">
+    <input type="password" name="password" placeholder="Contraseña (mínimo 6)" required>
+    <button type="submit">Registrarme</button>
+    <p id="mensaje" class="mensaje"></p>
+    <p>¿Ya tienes cuenta? <a href="/index.html">Inicia sesión</a></p>
+  </form>
+  <script src="/js/api.js"></script>
+  <script src="/js/registro.js"></script>
+</body>
+</html>
